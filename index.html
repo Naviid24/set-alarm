@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link my style sheet to my HTML page -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title of the page with icon from Fontawesome website -->
+    <link rel="icon" href="assets/icon/clock-icon.png" type="image/x-icon">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="container" >
+        <h1 class="time"></h1>
+        <div class="content">
+           <div class="controls">
+            <select>
+                <!-- Use selected attribute to show Hour in our selection box by default and use hidden attribute to hide Hour from our options in the selet box -->
+                <option value="Hour" selected hidden>Hour</option>
+            </select>
+           </div>
+           <div class="controls">
+            <select>
+                <!-- Use selected attribute to show Hour in our selection box by default and use hidden attribute to hide Hour from our options in the selet box -->
+                <option value="Minutes" selected hidden>Minute</option>
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+            </select>
+           </div>
+        </div>
+        <button>Set Alarm</button>
+    </div>
+    <!-- To link my external script codes to my HTML page -->
+    <script src="assets/js/script.js" ></script>
+</body>
+</html>
