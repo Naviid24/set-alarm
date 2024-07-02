@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    width: 100vw;
+    flex-direction: column;
+    background-image: url("../images/clock.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 40px;
+    margin: 10px 0;
+    
+}
+
+.container .content {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+/* will be added to div element with class of content, when user clicked on button */
+.container .content.disable {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.content .controls {
+    width: calc(100% / 2 - 10px );
+    border-radius: 5px;
+    border: 0;
+    
+}
+
+.content .controls select {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: large;
+    letter-spacing:1.5px;
+    background-color: rgb(250, 250, 250, 0.8);
+}
+
+.container button{
+    background-color: rgb(221, 224, 132);
+    outline: 0;
+    border: 0;
+    color: black;
+    padding: 20px 150px;
+    margin-top: 20px;
+    font-size: x-large;
+    border-radius: 10px;
+    letter-spacing:1.5px;
+}
+
+@media (max-width: 414px){
+    .container .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .controls{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .container button{
+        width: 90%;
+        padding: 15px;
+    }
+}
